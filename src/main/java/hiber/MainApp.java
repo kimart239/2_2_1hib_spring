@@ -36,10 +36,7 @@ public class MainApp {
       userService.add(user3);
       userService.add(user4);
 
-//      List<User> userList = userService.findUser(car1.getModel(), car1.getSeries());
-//      User user = userList.get(0);
-
-      System.out.println(user1);
+      System.out.println(userService.findUser(car1.getModel(), car1.getSeries()).get(0));
       context.close();
    }
 }
